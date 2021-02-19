@@ -1,0 +1,43 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getTemplate = exports.parseTemplateForTable = void 0;
+const api = require("../api");
+const logger = require("../logger");
+const error_1 = require("../error");
+const TIMEOUT = 30000;
+const MAX_DISPLAY_ITEMS = 50;
+function parseTemplateForTable(templateItems) {
+    let outputStr = "";
+    let counter = 0;
+    for (const item in templateItems) {
+        if (Object.prototype.hasOwnProperty.call(templateItems, item)) {
+            outputStr = outputStr.concat(item, "\n");
+            counter++;
+            if (counter === MAX_DISPLAY_ITEMS) {
+                outputStr += "+more..." + "\n";
+                break;
+            }
+        }
+    }
+    return outputStr;
+}
+exports.parseTemplateForTable = parseTemplateForTable;
+async function getTemplate(projectId, versionNumber) {
+    try {
+        let request = `/v1/projects/${projectId}/remoteConfig`;
+        if (versionNumber) {
+            request = request + "?versionNumber=" + versionNumber;
+        }
+        const response = await api.request("GET", request, {
+            auth: true,
+            origin: api.remoteConfigApiOrigin,
+            timeout: TIMEOUT,
+        });
+        return response.body;
+    }
+    catch (err) {
+        logger.debug(err.message);
+        throw new error_1.FirebaseError(`Failed to get Firebase Remote Config template for project ${projectId}. `, { exit: 2, original: err });
+    }
+}
+exports.getTemplate = getTemplate;

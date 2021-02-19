@@ -1,0 +1,207 @@
+.mainboard {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+}
+
+.mainboard__container {
+  background-color: white;
+  column-gap: 10px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+@media (min-width: 0px) and (max-width: 755px) {
+  .mainboard__container {
+    max-width: 504px;
+    column-count: 2;
+  }
+}
+
+@media (min-width: 756px) and (max-width: 1007px) {
+  .mainboard__container {
+    max-width: 756px;
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1008px) and (max-width: 1259px) {
+  .mainboard__container {
+    max-width: 1008px;
+    column-count: 4;
+  }
+}
+
+@media (min-width: 1260px) and (max-width: 1511px) {
+  .mainboard__container {
+    max-width: 1260px;
+    column-count: 5;
+  }
+}
+
+@media (min-width: 1512px) and (max-width: 1763px) {
+  .mainboard__container {
+    width: 1512px;
+    column-count: 6;
+  }
+}
+
+@media (min-width: 1764px) and (max-width: 2015px) {
+  .mainboard__container {
+    width: 1764px;
+    column-count: 7;
+  }
+}
+
+@media (min-width: 2016px) and (max-width: 2267px) {
+  .mainboard__container {
+    width: 2016px;
+    column-count: 8;
+  }
+}
+
+@media (min-width: 2268px) and (max-width: 2519px) {
+  .mainboard__container {
+    width: 2268px;
+    column-count: 9;
+  }
+}
+
+@media (min-width: 2520px) and (max-width: 2771px) {
+  .mainboard__container {
+    width: 2520px;
+    column-count: 10;
+  }
+}
+
+@media (min-width: 2772px) and (max-width: 3023px) {
+  .mainboard__container {
+    width: 2772px;
+    column-count: 11;
+  }
+}
+
+@media (min-width: 3024px) and (max-width: 3275px) {
+  .mainboard__container {
+    width: 3024px;
+    column-count: 12;
+  }
+}
+
+@media (min-width: 3276px) and (max-width: 3527px) {
+  .mainboard__container {
+    width: 3276px;
+    column-count: 13;
+  }
+}
+
+@media (min-width: 3528px) and (max-width: 3779px) {
+  .mainboard__container {
+    width: 3528px;
+    column-count: 14;
+  }
+}
+
+@media (min-width: 3780px) and (max-width: 4031px) {
+  .mainboard__container {
+    width: 3780px;
+    column-count: 15;
+  }
+}
+
+@media (min-width: 4032px) and (max-width: 4283px) {
+  .mainboard__container {
+    width: 4032px;
+    column-count: 16;
+  }
+}
+
+@media (min-width: 4284px) and (max-width: 4535px) {
+  .mainboard__container {
+    width: 4284px;
+    column-count: 17;
+  }
+}
+
+@media (min-width: 4536px) and (max-width: 4787px) {
+  .mainboard__container {
+    width: 4536px;
+    column-count: 18;
+  }
+}
+
+@media (min-width: 4788px) and (max-width: 5039px) {
+  .mainboard__container {
+    width: 4788px;
+    column-count: 19;
+  }
+}
+
+@media (min-width: 5040px) and (max-width: 5291px) {
+  .mainboard__container {
+    width: 5040px;
+    column-count: 20;
+  }
+}
+
+@media (min-width: 5292px) and (max-width: 5543px) {
+  .mainboard__container {
+    width: 5292px;
+    column-count: 21;
+  }
+}
+
+@media (min-width: 5544) and (max-width: 5795px) {
+  .mainboard__container {
+    width: 5544px;
+    column-count: 22;
+  }
+}
+
+@media (min-width: 5796px) and (max-width: 6047px) {
+  .mainboard__container {
+    width: 5796px;
+    column-count: 23;
+  }
+}
+
+@media (min-width: 6048px) and (max-width: 6299px) {
+  .mainboard__container {
+    width: 6048px;
+    column-count: 24;
+  }
+}
+
+@media (min-width: 6300px) and (max-width: 6551px) {
+  .mainboard__container {
+    width: 6300px;
+    column-count: 25;
+  }
+}
+@media (min-width: 6552px) and (max-width: 6803px) {
+  .mainboard__container {
+    width: 6552px;
+    column-count: 26;
+  }
+}
+
+@media (min-width: 6804px) and (max-width: 7055px) {
+  .mainboard__container {
+    width: 6804px;
+    column-count: 27;
+  }
+}
+@media (min-width: 7056px) and (max-width: 7307px) {
+  .mainboard__container {
+    width: 7056px;
+    column-count: 28;
+  }
+}
+@media (min-width: 7308px) and (max-width: 7559px) {
+  .mainboard__container {
+    width: 7308px;
+    column-count: 29;
+  }
+}
